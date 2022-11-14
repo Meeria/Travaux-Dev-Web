@@ -604,12 +604,14 @@ body{
 form {
     border-left: 1px hsl(0,0%,17%) solid;
     border-right: 1px hsl(0,0%,17%) solid;
-    width: 40%;
+    width: 55%;
     margin: auto;
     text-align: center;
     padding: 15px;
     background-color: hsl(0,0%,6%);
+    
 }
+
 .usermail {
     padding-top: 30px;
     border-top: 1px hsl(0,0%,17%) solid;
@@ -620,27 +622,36 @@ form {
 textarea{
     max-width: 600px;
     max-height: 200px;
-    min-width: 300px;
-    min-height: 100px;
+    background-color: hsl(0,0%,15%);
+    border: 1px hsl(0,0%,17%) solid;
+    color: white;
 }
 .button {
+    margin: auto;
+    width: 56.6%;
+    text-align: center;
     border-bottom: 1px hsl(0,0%,17%) solid;
-    margin-bottom: 30px;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    border-left: 1px hsl(0,0%,17%) solid;
+    border-right: 1px hsl(0,0%,17%) solid;
+    margin-bottom: 60px;
     background-color: rgb(124,58,237);
+    height: 70px;
 }
 .send {
     background-color: rgb(124,58,237);
     color: white;
     width: 100%;
     height: 100%;
-    margin-top: 0px;
+    /* border: none;  */
 }
-
-
-
-
+input{
+    border: 1px hsl(0,0%,17%) solid;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    background-color: hsl(0,0%,15%);
+    color: white;
+}
 
 
 
@@ -674,8 +685,6 @@ footer{
 .reseaux i:hover{
     color: rgb(124,58,237);
 }
-
-
 
 
 /* Fin droits */
