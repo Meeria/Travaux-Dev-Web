@@ -19,7 +19,7 @@
 			<a href="#competences" class="section">Compétences</a>
 			<a href="#experiences" class="section">Expériences</a>
 			<a href="#formation" class="section">Formations</a>
-			<a href="www.twitch.fr" class="section">Contact</a>
+			<a href="#contact" class="section">Contact</a>
 		</div>
 	</nav>
 </header>
@@ -226,12 +226,9 @@
 				</a>
 			</div>
 		</div>
-		<div class="scroll_to_top">
-			<a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
-		</div>
 
 
-
+		<span id="contact"></span>
 		<div class="contact">
 			<h1>Me contacter !</h1>
 			<form class="usermail" method="get">
@@ -246,17 +243,26 @@
 						required />
 				</p>
 			</form>
-			<form class="usermessage" method="get">
+			<form class="usermessage" method="post" action="contact.php">
 				<p>
 					<label for="message">Votre Message</label> : <textarea type="text" name="message" id="message"
-						rows="5" cols="60" required></textarea>
+						rows="5" cols="60" required placeholder="Votre message"></textarea>
 				</p>
 			</form>
 			<div class="button">
 				<input class="send" type="submit" />
 			</div>
+			<?php
+			if (isset($msg)){
+				echo $msg;
+			}
 
 		</div>
+
+		<div class="scroll_to_top">
+			<a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
+		</div>
+
 </body>
 <footer>
 	<div class="reseaux">
