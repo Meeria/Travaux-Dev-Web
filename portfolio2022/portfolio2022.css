@@ -629,6 +629,7 @@ form {
     padding-bottom: 30px;
 }
 textarea{
+    border-radius: 4px;
     width: 60%;
     background-color: hsl(0,0%,15%);
     border: 1px hsl(0,0%,17%) solid;
@@ -652,6 +653,7 @@ textarea{
     height: 100%;
 }
 input{
+    border-radius: 4px;
     border: 1px hsl(0,0%,17%) solid;
     width: 40%;
     text-align: center;
