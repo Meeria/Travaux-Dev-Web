@@ -13,6 +13,7 @@
 // echo 'erreur';
 
 $to = 'meria.dap@hotmail.fr';
+$subject = 'Mail Portfolio';
 $name = htmlspecialchars($POST['nom']);
 $headers = htmlspecialchars($POST['mail']);
 $message = htmlspecialchars($POST['message']);
