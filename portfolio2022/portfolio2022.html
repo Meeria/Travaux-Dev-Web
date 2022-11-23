@@ -234,27 +234,28 @@
 		<h1>Me contacter !</h1>
 		<form method="post" action="contact.php" name="mailform">
 
-			<form class="usermail" method="post">
+			<div class="usermail">
 				<p>
 					<label for="mail">Votre Mail</label> : <input type="email" name="mail" id="mail"
 						placeholder="roger@gmail.com" required />
 				</p>
-			</form>
-			<form class="username" method="post">
+			</div>
+			<div class="username">
 				<p>
 					<label for="nom">Votre Nom</label> : <input type="text" name="nom" id="nom" placeholder="Roger"
 						required />
 				</p>
-			</form>
-			<form class="usermessage" method="post">
+			</div>
+			<div class="usermessage">
 				<p>
 					<label for="message">Votre Message</label> : <textarea type="text" name="message" id="message"
 						rows="5" cols="60" required placeholder="Votre message"></textarea>
 				</p>
-			</form>
-			<div class="button">
-				<input class="send" type="submit" />
 			</div>
+			<div class="button">
+				<input class="send" type="submit" value="envoyer" />
+			</div>
+
 
 		</form>
 	</div>

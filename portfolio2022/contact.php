@@ -14,15 +14,18 @@
 
 $to = 'meria.dap@hotmail.fr';
 $subject = 'Mail Portfolio';
-$name = htmlspecialchars($POST['nom']);
-$headers = htmlspecialchars($POST['mail']);
-$message = htmlspecialchars($POST['message']);
+$name = htmlspecialchars($_POST['nom']);
+$headers = 'From:' . htmlspecialchars($_POST['mail']) . '\r\n' ;
+$message = htmlspecialchars($_POST['message']);
 
 
-if(isset($POST['mailform'])){
 
-if (!empty($POST['mail']) and !empty($POST['nom']) and !empty($POST['message'])){
-mail($to, $subject, $message, $headers)
-}
-}
+
+    if (!empty($_POST['mail']) and !empty($_POST['nom']) and !empty($_POST['message'])){
+        mail($to, $subject, $message, $headers);
+        echo 'envoyé';
+    }
+    else 
+        echo 'erreur dans l\'envoie';
+
 

@@ -621,6 +621,11 @@ form {
     background-color: hsl(0,0%,6%);
 }
 
+.usermassage .username .usermail{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .usermail {
     padding-top: 30px;
     border-top: 1px hsl(0,0%,17%) solid;
