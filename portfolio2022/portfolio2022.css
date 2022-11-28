@@ -612,8 +612,7 @@ color: white;
 
 
 form {
-    border-left: 1px hsl(0,0%,17%) solid;
-    border-right: 1px hsl(0,0%,17%) solid;
+    border: 1px hsl(0,0%,17%) solid;
     width: 55%;
     margin: auto;
     text-align: center;
@@ -621,19 +620,20 @@ form {
     background-color: hsl(0,0%,6%);
 }
 
-.usermassage .username .usermail{
-    margin-top: 20px;
+.username{
     margin-bottom: 20px;
 }
-
 .usermail {
+    margin-bottom: 20px;
     padding-top: 30px;
     border-top: 1px hsl(0,0%,17%) solid;
 }
 .usermessage {
+    margin-bottom: 20px;
     padding-bottom: 30px;
 }
 textarea{
+    resize: none;
     border-radius: 4px;
     width: 60%;
     background-color: hsl(0,0%,15%);
