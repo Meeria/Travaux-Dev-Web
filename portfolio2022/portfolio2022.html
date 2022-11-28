@@ -14,12 +14,12 @@
 	<nav>
 		<h1 class="titre">C:/Users/<span id="portfolio">Mériadec_Denier_d_Aprigny</span></h1>
 		<div class="menu">
-			<a href="portfolio2022.html" class="section" id="page_active">Accueil</a>
-			<a href="#apropos1" class="section">A propos</a>
-			<a href="#competences" class="section">Compétences</a>
-			<a href="#experiences" class="section">Expériences</a>
-			<a href="#formation" class="section">Formations</a>
-			<a href="#contact" class="section">Contact</a>
+			<a href="portfolio2022.html" id="section0" class="none" onclick="changeClass0()">Accueil</a>
+			<a href="#apropos1" id="section1" class="none" onclick="changeClass1()">A propos</a>
+			<a href="#competences" id="section2" class="none" onclick="changeClass2()">Compétences</a>
+			<a href="#experiences" id="section3" class="none" onclick="changeClass3()">Expériences</a>
+			<a href="#formation" id="section4" class="none" onclick="changeClass4()">Formations</a>
+			<a href="#contact" id="section5" class="none" onclick="changeClass5()">Contact</a>
 		</div>
 	</nav>
 </header>
@@ -275,5 +275,52 @@
 	</div>
 	<h4 class="droits">ⓒ2022. Meria. All Right Reserved \ Privacy policy</h4>
 </footer>
+<script>
+	function changeClas0() {
+		document.getElementById("section0").className = "active";
+		document.getElementById("section1").className = "none";
+		document.getElementById("section2").className = "none";
+		document.getElementById("section3").className = "none";
+		document.getElementById("section4").className = "none";
+		document.getElementById("section5").className = "none";
+	}
+	function changeClass1() {
+		document.getElementById("section1").className = "active";
+		document.getElementById("section0 + section1 + section2 + section3 + section4 + section5").className = "none";
+
+	}
+	function changeClass2() {
+		document.getElementById("section2").className = "active";
+		document.getElementById("section0").className = "none";
+		document.getElementById("section1").className = "none";
+		document.getElementById("section3").className = "none";
+		document.getElementById("section4").className = "none";
+		document.getElementById("section5").className = "none";
+	}
+	function changeClass3() {
+		document.getElementById("section3").className = "active";
+		document.getElementById("section0").className = "none";
+		document.getElementById("section2").className = "none";
+		document.getElementById("section1").className = "none";
+		document.getElementById("section4").className = "none";
+		document.getElementById("section5").className = "none";
+	}
+	function changeClass4() {
+		document.getElementById("section4").className = "active";
+		document.getElementById("section0").className = "none";
+		document.getElementById("section2").className = "none";
+		document.getElementById("section3").className = "none";
+		document.getElementById("section1").className = "none";
+		document.getElementById("section5").className = "none";
+	}
+	function changeClass5() {
+		document.getElementById("section5").className = "active";
+		document.getElementById("section0").className = "none";
+		document.getElementById("section2").className = "none";
+		document.getElementById("section3").className = "none";
+		document.getElementById("section4").className = "none";
+		document.getElementById("section1").className = "none";
+	}
+</script>
 
 </html>
