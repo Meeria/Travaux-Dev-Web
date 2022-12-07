@@ -12,14 +12,28 @@
 </head>
 <header>
 	<nav>
+		<span id="index"></span>
 		<h1 class="titre">C:/Users/<span id="portfolio">Mériadec_Denier_d_Aprigny</span></h1>
 		<div class="menu">
-			<a href="portfolio2022.html" class="section" id="page_active">Accueil</a>
-			<a href="#apropos1" class="section">A propos</a>
-			<a href="#competences" class="section">Compétences</a>
-			<a href="#experiences" class="section">Expériences</a>
-			<a href="#formation" class="section">Formations</a>
-			<a href="#contact" class="section">Contact</a>
+			<?php
+				$data=yaml_parse_file("yaml/menu.yaml");
+				$i=0;
+				foreach($data AS $fichier=>$nom){
+					$active='';
+					if($fichier=="index"){
+						$active=' class="active" ';
+					}
+					echo '<a href="index.php#'.$fichier.'" id="section'.$i.'" '.$active.' onclick="changeClass('.$i.')">'.$nom.'</a>';
+					$i++;
+				}
+
+			?>
+			<!-- <a href="index.html" id="section0" class="active" onclick="changeClass0()">Accueil</a>
+			<a href="#apropos1" id="section1" class="none" onclick="changeClass1()">A propos</a>
+			<a href="#competences" id="section2" class="none" onclick="changeClass2()">Compétences</a>
+			<a href="#experiences" id="section3" class="none" onclick="changeClass3()">Expériences</a>
+			<a href="#formation" id="section4" class="none" onclick="changeClass4()">Formations</a>
+			<a href="#contact" id="section5" class="none" onclick="changeClass5()">Contact</a> -->
 		</div>
 	</nav>
 </header>
@@ -253,7 +267,7 @@
 				</p>
 			</div>
 			<div class="button">
-				<input class="send" type="submit" value="envoyer" />
+				<input class="send" type="submit" value="Envoyer" />
 			</div>
 
 
@@ -275,5 +289,6 @@
 	</div>
 	<h4 class="droits">ⓒ2022. Meria. All Right Reserved \ Privacy policy</h4>
 </footer>
+<script src="script.js"></script>
 
 </html>
