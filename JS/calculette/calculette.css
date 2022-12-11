@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.calculatrice{
+background-color: aqua;
+display: flex;
+flex-direction: column;
+
+}
+
+.ecran{
+width: 205px;
+height: 100px;
+background-color: blueviolet;
+margin-bottom: 10px;
+border-radius: 5px;
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+padding: 5px;
+}
+
+.touches{
+display: grid;
+grid-template-columns: repeat(4, 50px);
+grid-template-rows: repeat(5, 50px);
+grid-gap: 5px;
+
+}
+
+.bouton{
+
+}
+
+
