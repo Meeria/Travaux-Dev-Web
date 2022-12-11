@@ -12,8 +12,9 @@
 </head>
 <header>
 	<nav>
-		<span id="index"></span>
+		
 		<h1 class="titre">C:/Users/<span id="portfolio">Mériadec_Denier_d_Aprigny</span></h1>
+		<span id="toto"></span>
 		<div class="menu">
 			<?php
 				$data=yaml_parse_file("yaml/menu.yaml");
@@ -137,13 +138,25 @@
 	<span id="experiences"></span>
 	<div class="experiences">
 		<h1>C:/Experiences/<span id="moi2">Mes_Expériences_Professionnelles</span></h1>
-		<div id="xp1">
-			<h3>Mars 2022 – Mai 2022</h3>
+		<!-- <div id="xp1"> -->
+
+			<?php
+				$data=yaml_parse_file("yaml/experiences.yaml");
+				foreach($data AS $exps=>$exp){
+					echo '<div id="xp1"><h3>'.$exp.'</h3>
+							<h4>' .$exp. '</h4>
+							<p>' .$exp. '</p> </div>';
+					echo '<div id="xp2"><h3>'.$exp.'</h3>
+							<h4>' .$exp. '</h4>
+							<p>' .$exp. '</p> </div>';
+				}
+			?>
+			<!-- <h3>Mars 2022 – Mai 2022</h3>
 			<h4>Montage équipements automobile, LE CAPITAINE, SAINT-LÔ</h4>
 			<p>
 				- Montage d’accessoires sur des véhicules frigorifiques (caméra de recule,<br> branchement de feux…)
 				dans un temps donné.
-			</p>
+			</p> -->
 		</div>
 		<div id="xp2">
 			<h3>Décembre 2021 – Janvier 2022</h3>
@@ -189,6 +202,13 @@
 				finaliste des championnats de France.
 			</p>
 		</div>
+		
+		
+		
+		
+		
+		
+		
 		<div>
 			<a href="CV-2022 Mériadec Denier d'Aprigny1.pdf" target="_blank"
 				download="CV-2022 Mériadec Denier d'Aprigny1.pdf">
