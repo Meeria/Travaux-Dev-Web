@@ -142,14 +142,24 @@
 
 			<?php
 				$data=yaml_parse_file("yaml/experiences.yaml");
-				foreach($data AS $exps=>$exp){
-					echo '<div id="xp1"><h3>'.$exp.'</h3>
-							<h4>' .$exp. '</h4>
-							<p>' .$exp. '</p> </div>';
-					echo '<div id="xp2"><h3>'.$exp.'</h3>
-							<h4>' .$exp. '</h4>
-							<p>' .$exp. '</p> </div>';
-				}
+				
+				$g = 1 ;
+				
+							foreach($data AS $données){
+								
+								echo '<div class="xp'.$g.'"><h3>'.$données['dates'].'</h3> 
+										<h4>' .$données['titre']. '</h4>
+										<p>' .$données['description']. '</p> </div>';
+									
+										if ($g = 1 ){
+										$g = 2;
+									} else {
+										$g = 2;
+									}
+								
+							}
+				
+
 			?>
 			<!-- <h3>Mars 2022 – Mai 2022</h3>
 			<h4>Montage équipements automobile, LE CAPITAINE, SAINT-LÔ</h4>
@@ -157,7 +167,7 @@
 				- Montage d’accessoires sur des véhicules frigorifiques (caméra de recule,<br> branchement de feux…)
 				dans un temps donné.
 			</p> -->
-		</div>
+		<!-- </div>
 		<div id="xp2">
 			<h3>Décembre 2021 – Janvier 2022</h3>
 			<h4>Aide boulangerie / charcuterie, Intermarché, SAINT-LÔ</h4>
@@ -200,7 +210,7 @@
 			<p>
 				- Inscrit sur la liste ministérielle de sportif de haut niveau en<br> saut en longueur. Plusieurs fois
 				finaliste des championnats de France.
-			</p>
+			</p> -->
 		</div>
 		
 		
