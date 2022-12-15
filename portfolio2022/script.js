@@ -1,13 +1,12 @@
 
-function changeClass(i){
-  for(var j=0; j<6; j++){
-    if(j==i){
-      document.getElementById("section"+j).className = "active";
-    }
-    else {
-      document.getElementById("section"+j).className = "none";
-    }
+function changeClass(obj){
+
+ var nodeList = document.querySelectorAll(".menu a");
+  for (let i = 0; i < nodeList.length; i++) {
+    nodeList[i].className = "none";
   }
+  obj.className = "active";
+
 }
 
 

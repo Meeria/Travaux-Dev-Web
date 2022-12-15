@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+}
+
+nav {
+    margin-top: 5px;
+}
+
+.menu {
+    justify-content: space-around;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    color: white;
+    background-color: black;
+    align-items: center;
+}
+
+
+
+a {
+    border-radius: 5px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: 2px white solid;
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+body {
+    background-color: black;
+}
+
+body h1 {
+    color: white;
+    text-align: center;
+    margin-top: 300px;
+}

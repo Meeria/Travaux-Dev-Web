@@ -14,9 +14,10 @@
 	<nav>
 		
 		<h1 class="titre">C:/Users/<span id="portfolio">Mériadec_Denier_d_Aprigny</span></h1>
-		<span id="toto"></span>
 		<div class="menu">
 			<?php
+				
+				
 				$data=yaml_parse_file("yaml/menu.yaml");
 				$i=0;
 				foreach($data AS $fichier=>$nom){
@@ -24,22 +25,17 @@
 					if($fichier=="index"){
 						$active=' class="active" ';
 					}
-					echo '<a href="index.php#'.$fichier.'" id="section'.$i.'" '.$active.' onclick="changeClass('.$i.')">'.$nom.'</a>';
+					echo '<a href="index.php#'.$fichier.'" id="section'.$i.'" '.$active.' onclick="changeClass(this)">'.$nom.'</a>';
 					$i++;
 				}
 
 			?>
-			<!-- <a href="index.html" id="section0" class="active" onclick="changeClass0()">Accueil</a>
-			<a href="#apropos1" id="section1" class="none" onclick="changeClass1()">A propos</a>
-			<a href="#competences" id="section2" class="none" onclick="changeClass2()">Compétences</a>
-			<a href="#experiences" id="section3" class="none" onclick="changeClass3()">Expériences</a>
-			<a href="#formation" id="section4" class="none" onclick="changeClass4()">Formations</a>
-			<a href="#contact" id="section5" class="none" onclick="changeClass5()">Contact</a> -->
 		</div>
 	</nav>
 </header>
 
 <body>
+<span id="accueil"></span>
 	<p class="dev">Developper Web (bientôt) Junior<span class="underscore">_</span></p>
 	<p class="accroche">Hello, si tu veux en voir plus je t'invites à scroll !</p>
 
@@ -143,80 +139,19 @@
 			<?php
 				$data=yaml_parse_file("yaml/experiences.yaml");
 				
-				$g = 1 ;
+				$g = 0 ;
 				
 							foreach($data AS $données){
 								
-								echo '<div class="xp'.$g.'"><h3>'.$données['dates'].'</h3> 
+								echo '<div class="xp'.($g%2).'"><h3>'.$données['dates'].'</h3> 
 										<h4>' .$données['titre']. '</h4>
 										<p>' .$données['description']. '</p> </div>';
 									
-										if ($g = 1 ){
-										$g = 2;
-									} else {
-										$g = 2;
-									}
-								
+									$g++;	
 							}
-				
-
 			?>
-			<!-- <h3>Mars 2022 – Mai 2022</h3>
-			<h4>Montage équipements automobile, LE CAPITAINE, SAINT-LÔ</h4>
-			<p>
-				- Montage d’accessoires sur des véhicules frigorifiques (caméra de recule,<br> branchement de feux…)
-				dans un temps donné.
-			</p> -->
-		<!-- </div>
-		<div id="xp2">
-			<h3>Décembre 2021 – Janvier 2022</h3>
-			<h4>Aide boulangerie / charcuterie, Intermarché, SAINT-LÔ</h4>
-			<p>
-				- Élaboration de pâtisseries (pains aux chocolats, croissants…), de pizzas<br>, mille-feuilles…
-			</p>
+			
 		</div>
-		<div id="xp1">
-			<h3>Juin 2020 – Août 2020</h3>
-			<h4>Réparation / livraison de commandes, Leclerc-Drive, SAINT-LÔ</h4>
-			<p>
-				- Préparation de commandes internet dans un temps imparti et chargement dans le<br> véhicule des
-				clients.
-			</p>
-		</div>
-		<div id="xp2">
-			<h3>Décembre 2019 – Septembre 2021</h3>
-			<h4>Livraison de repas à domicile, Uber-eat, CAEN </h4>
-			<p>
-				- Livraison de repas à domicile à vélo.
-			</p>
-		</div>
-		<div id="xp1">
-			<h3>Septembre 2019 - Novembre 2019</h3>
-			<h4>Nettoyage et marquage au sol, Saint-André Plastique,<br> SAINT-ANDRÉ de l’ÉPINE</h4>
-			<p>
-				- Nettoyage de machines de production, marquage de sécurité au sol.
-			</p>
-		</div>
-		<div id="xp2">
-			<h3>Juillet 2018 – Juin 2019</h3>
-			<h4>Armée de Terre, SAINT-AUBIN DU CORMIER</h4>
-			<p>
-				- Soldat réserviste : tir, surveillance, activités physiques, sécurisation.
-			</p>
-		</div>
-		<div id="xp1">
-			<h3>Janvier 2017 - Janvier 2018</h3>
-			<h4>Sportif de haut niveau, SAINT-LÔ</h4>
-			<p>
-				- Inscrit sur la liste ministérielle de sportif de haut niveau en<br> saut en longueur. Plusieurs fois
-				finaliste des championnats de France.
-			</p> -->
-		</div>
-		
-		
-		
-		
-		
 		
 		
 		<div>

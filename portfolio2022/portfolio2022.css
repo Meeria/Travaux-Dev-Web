@@ -4,7 +4,9 @@
     font-family: monospace;
 }
 
+
 html {
+
     scroll-behavior: smooth;
 }
 
@@ -401,7 +403,7 @@ body {
     border-top: 2px black solid;
 }
 
-.xp1 {
+.xp0 {
     background-color: rgb(20, 20, 20);
     border-radius: 5px;
     margin-top: 2em;
@@ -409,6 +411,42 @@ body {
     color: white;
     margin-right: auto;
     margin-left: 53%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.xp0 h3 {
+    margin-bottom: 0.3em;
+    color: yellow;
+    font-size: 17px;
+}
+
+.xp0 h4 {
+    font-size: 17px;
+    margin-bottom: 0.3em;
+    color: white;
+}
+
+.xp0 p {
+    margin-right: 5%;
+    margin-top: 10px;
+    font-style: italic;
+    color: hsl(0, 0%, 60%);
+}
+
+
+.xp1 {
+    background-color: rgb(20, 20, 20);
+    border-radius: 5px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: 53%;
+    text-align: end;
+    margin-top: 2em;
+    color: white;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
@@ -426,57 +464,21 @@ body {
     font-size: 17px;
     margin-bottom: 0.3em;
     color: white;
+
 }
 
 .xp1 p {
-    margin-right: 5%;
-    margin-top: 10px;
-    font-style: italic;
-    color: hsl(0, 0%, 60%);
-}
-
-
-.xp2 {
-    background-color: rgb(20, 20, 20);
-    border-radius: 5px;
-    width: max-content;
-    margin-left: auto;
-    margin-right: 53%;
-    text-align: end;
-    margin-top: 2em;
-    color: white;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    flex-wrap: wrap;
-}
-
-.xp2 h3 {
-    margin-bottom: 0.3em;
-    color: yellow;
-    font-size: 17px;
-}
-
-.xp2 h4 {
-    font-size: 17px;
-    margin-bottom: 0.3em;
-    color: white;
-
-}
-
-.xp2 p {
     margin-top: 10px;
     text-align: end;
     font-style: italic;
     color: hsl(0, 0%, 60%);
-}
-
-.xp2:hover {
-    background-color: hsl(0, 0%, 20%);
 }
 
 .xp1:hover {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.xp0:hover {
     background-color: hsl(0, 0%, 20%);
 }
 
@@ -516,13 +518,13 @@ body {
         font-size: 14px;
     }
 
-    .xp1 {
+    .xp0 {
         width: 80%;
         margin: auto;
         margin-bottom: 40px;
     }
 
-    .xp2 {
+    .xp1 {
         width: 80%;
         margin: auto;
         margin-bottom: 40px;
