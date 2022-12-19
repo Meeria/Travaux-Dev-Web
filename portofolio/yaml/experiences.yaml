@@ -1,0 +1,36 @@
+exp1: 
+  dates: 'Mars 2022 – Mai 2022'
+  titre: 'Montage équipements automobile, LE CAPITAINE, SAINT-LÔ'
+  description: '- Montage d’accessoires sur des véhicules frigorifiques (caméra de recule,<br> branchement de feux…) dans un temps donné.' 
+
+exp2:
+  dates: 'Décembre 2021 – Janvier 2022'
+  titre: 'Aide boulangerie / charcuterie, Intermarché, SAINT-LÔ'
+  description: '- Élaboration de pâtisseries (pains aux chocolats, croissants…), de pizzas<br>, mille-feuilles…'
+
+exp3:
+  dates: 'Juin 2020 – Août 2020'
+  titre: 'Réparation / livraison de commandes, Leclerc-Drive, SAINT-LÔ'
+  description: '- Préparation de commandes internet dans un temps imparti et chargement dans le<br> véhicule des clients.'
+
+exp4:
+  dates: 'Décembre 2019 – Septembre 2021'
+  titre: 'Livraison de repas à domicile, Uber-eat, CAEN'
+  description: '- Livraison de repas à domicile à vélo.'
+
+exp5:
+  dates: 'Septembre 2019 - Novembre 2019'
+  titre: 'Nettoyage et marquage au sol, Saint-André Plastique,<br> SAINT-ANDRÉ de l’ÉPINE'
+  description: '- Nettoyage de machines de production, marquage de sécurité au sol.'
+
+exp6:
+  dates: 'Juillet 2018 – Juin 2019'
+  titre: 'Armée de Terre, SAINT-AUBIN DU CORMIER'
+  description:  'Soldat réserviste ; tir, surveillance, activités physiques, sécurisation.'
+
+
+exp7: 
+  dates: 'Janvier 2017 - Janvier 2018'
+  titre: 'Sportif de haut niveau, SAINT-LÔ'
+  description: '- Inscrit sur la liste ministérielle de sportif de haut niveau en<br> saut en longueur. Plusieurs fois finaliste des championnats de France.'
+
