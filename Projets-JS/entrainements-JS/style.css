@@ -9,6 +9,7 @@ body {
     text-align: center;
     margin: 0;
     color: white;
+    overflow-x: hidden;
 }
 
 .box {
@@ -41,4 +42,14 @@ p {
     visibility: visible;
     background-color: green;
     opacity: 1;
+}
+
+.mousemove {
+    height: 40px;
+    width: 40px;
+    border: 2px solid red;
+    position: absolute;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
