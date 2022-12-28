@@ -71,5 +71,25 @@ const key = document.getElementById('key');
 
 document.addEventListener('keypress', (event) => {
 key.textContent = event.key;
+if (event.key === "m" || event.key === "d" ){
+key.style.color = "red";
+keypressContainer.style.background = "green";
+} else {
+  key.style.color = "yellow";
+  keypressContainer.style.background = "black";
+}
 });
+
+// scroll event 
+
+const nav = document.querySelector("nav")
+
+window.addEventListener('scroll', () => {
+if ( window.scrollY > 200){
+  nav.style.top = "0px";
+} else {
+  nav.style.top = "-50px";
+}
+})
+
 
