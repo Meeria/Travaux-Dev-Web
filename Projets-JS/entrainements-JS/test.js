@@ -7,7 +7,7 @@ const questionContainer = document.querySelector(".click-event");
 const boutton1 = document.getElementById('btn-1');
 const boutton2 = document.getElementById('btn-2');
 const boutton3 = document.getElementById('btn-3');
-
+const body = document.querySelector('body');
 
 
 
@@ -80,6 +80,8 @@ keypressContainer.style.background = "green";
 }
 });
 
+// -----------------------------------------------------------------
+
 // scroll event 
 
 const nav = document.querySelector("nav")
@@ -91,5 +93,45 @@ if ( window.scrollY > 200){
   nav.style.top = "-50px";
 }
 })
+
+//------------------------------------------------------------
+
+// evenement sur Formulaires
+
+const inputName = document.querySelector('input[type="text"]');
+const select = document.querySelector('select');
+const form = document.querySelector('form');
+
+let pseudo = "";
+let language = "";
+
+inputName.addEventListener ('input', (e) => {
+//console.log(e.target.value);
+if (e.target.value === "meria"){
+  body.style.background = "pink";
+} else {
+  body.style.background = "";
+};
+pseudo = e.target.value
+}) 
+
+select.addEventListener ('input', (e) => {
+language = e.target.value;
+})
+
+form.addEventListener ('submit', (e) => {
+  e.preventDefault();
+  if (cgv.checked){
+document.querySelector('form > div').innerHTML = `<h2> Pseudo : ${pseudo}</h2>
+<h3> Language : ${language} </h3>`;
+  } else {
+    alert("veuillez accepter les cgv")
+  }
+})
+
+//----------------------------------------------------------------
+
+// Event Load 
+
 
 
