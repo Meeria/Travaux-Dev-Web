@@ -59,7 +59,7 @@ questionContainer.addEventListener("mouseout", () => {
 })
 
 reponse.addEventListener("mouseover", () => {
-  reponse.style.rotate = ("180deg");
+  reponse.style.rotate = ("360deg");
 })
 
 //----------------------------------------------------------------
@@ -131,7 +131,29 @@ document.querySelector('form > div').innerHTML = `<h2> Pseudo : ${pseudo}</h2>
 
 //----------------------------------------------------------------
 
-// Event Load 
+// Les ForEache
+
+// const boxes = document.getElementsByClassName('box');
+
+const boxes = document.querySelectorAll(".box");
+
+boxes.forEach((box) => {
+  box.addEventListener('click', (e) => {
+    console.log(e.target);
+  })
+})
+
+//--------------------------------------------
+
+// addEventListener Vs onclick
+
+// StopPropagation
 
 
 
+// BOM
+
+
+// Ouvrir une fenetre popup
+// window.open('https://google.com', )
+// window.close('https://google.com', )
