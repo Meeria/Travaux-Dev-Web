@@ -176,3 +176,7 @@ boutton1.addEventListener('click', () => {
 setTimeout(() => {
   questionContainer.style.borderRadius = "200px";
 }, 3000);
+
+// setInterval(() => {
+//   body.innerHTML += `<h2 > Je suis un spam </h2>`;
+// }, 1000)
