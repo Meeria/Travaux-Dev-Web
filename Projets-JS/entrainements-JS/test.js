@@ -157,3 +157,22 @@ boxes.forEach((box) => {
 // Ouvrir une fenetre popup
 // window.open('https://google.com', )
 // window.close('https://google.com', )
+
+
+//confirm
+
+boutton2.addEventListener('click', () => {
+  confirm("voulez-vous vraiment vous tromper ? ");
+})
+
+boutton1.addEventListener('click', () => {
+ let answer =  prompt("entrez votre nom");
+
+ questionContainer.innerHTML = "<h3>Bravo " + answer + " tu t'es trompé</h3>";
+})
+
+//----------
+
+setTimeout(() => {
+  questionContainer.style.borderRadius = "200px";
+}, 3000);
