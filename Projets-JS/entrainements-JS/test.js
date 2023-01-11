@@ -179,4 +179,4 @@ setTimeout(() => {
 
 // setInterval(() => {
 //   body.innerHTML += `<h2 > Je suis un spam </h2>`;
-// }, 1000)
+// }, 50)

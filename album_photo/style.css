@@ -1,0 +1,22 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.menu_albums {
+    display: flex;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+}
+
+a {
+    text-decoration: none;
+}
