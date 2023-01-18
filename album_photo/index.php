@@ -11,18 +11,15 @@
     <h1>Mes Albums</h1>
 
 <div class="menu_albums">
-
-<a  id="courant"  href="index.php?id=1">Chats</a>
-<a  href="index.php?id=2">Chiens</a>
-<a  href="index.php?id=3">Oiseaux</a>
-
+    
 <?php
+if(!isset($_GET['id'])){
+    $_GET['id']=1;
+}
 
-if (isset($_GET['id']))
-        echo 'vous etes sur la bonne page';
-/* $cnx = mysqli_connect("localhost", "root", "", "albums");
-
-if (mysqli_connect_errno()) {
+   $cnx = mysqli_connect("localhost", "root", "", "albums");
+   
+   if (mysqli_connect_errno()) {
     echo "Echec de la connexion : ".mysqli_connect_error();
     exit ();
 }
@@ -30,17 +27,15 @@ if (mysqli_connect_errno()) {
 $sql = "SELECT * from albums";
 $res = mysqli_query($cnx, $sql);
 
-while ($ligne = mysqli_fetch_array($res)){
-    echo "<p class='nom_album'>".$ligne['nomAlb']."</p>";
+while ($albums = mysqli_fetch_array($res)){
+    $id=$albums["idAlb"]==$_GET['id'] ? ' id="actif" ' : ''; 
+    echo '<a '.$id.' href="index.php?id='.$albums["idAlb"].'">'.$albums["nomAlb"].'</a>';
 }
 
-mysqli_free_result($res);
-
-mysqli_close($cnx);
-*/
 ?>
-</div>
 
+</div>
+<div class="photos">
 <?php
 
 $cnx = mysqli_connect("localhost", "root", "", "albums");
@@ -50,19 +45,20 @@ if (mysqli_connect_errno()) {
     exit ();
 }
 
-$sql = "SELECT * from photos";
+$sql = "SELECT nomPh from photos INNER JOIN comporter ON comporter.idPh=photos.idPh WHERE idAlb=".$_GET['id'];
 $res = mysqli_query($cnx, $sql);
 
 while ($ligne = mysqli_fetch_array($res)){
-    echo "<p class='nom_album'>".$ligne['idPh']."</p>";
     echo "<img src='photos/".$ligne['nomPh'].".jpg'>";
 }
+
 mysqli_free_result($res);
 
 mysqli_close($cnx);
 
 ?>
-
+</div>
     
 </body>
+<script src="effects.js"></script>
 </html>
