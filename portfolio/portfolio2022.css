@@ -474,16 +474,7 @@ body {
     color: hsl(0, 0%, 60%);
 }
 
-.xp1:hover {
-    background-color: hsl(0, 0%, 20%);
-}
-
-.xp0:hover {
-    background-color: hsl(0, 0%, 20%);
-}
-
 #boutoncv {
-    margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     color: hsl(0, 0%, 70%);
@@ -496,7 +487,12 @@ body {
     text-align: center;
     border: 1px hsl(0, 0%, 17%) solid;
     border-radius: 10px;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.btnCv {
+    text-align: center;
 }
 
 #boutoncv:hover {

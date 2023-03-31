@@ -67,7 +67,7 @@
 			<div class="ht">
 				<h2><i class="fa-brands fa-html5"></i>&ensp;HTML</h2>
 				<div class="container">
-					<div class="skill" style="width: 50%">50%</div>
+					<div class="skill" style="width: 65%">65%</div>
 				</div>
 			</div>
 
@@ -84,7 +84,7 @@
 			<div class="ht">
 				<h2><i class="fa-brands fa-php"></i>&ensp;PHP</h2>
 				<div class="container">
-					<div class="skill" style="width: 10%">10%</div>
+					<div class="skill" style="width: 40%">40%</div>
 				</div>
 			</div>
 
@@ -154,10 +154,9 @@
 		</div>
 		
 		
-		<div>
+		<div class="btnCv">
 			<a href="CV-2022 Mériadec Denier d'Aprigny1.pdf" target="_blank"
-				download="CV-2022 Mériadec Denier d'Aprigny1.pdf">
-				<p id="boutoncv">Télécharger mon CV <i class="fa-solid fa-download"></i></p>
+				download="CV-2022 Mériadec Denier d'Aprigny1.pdf" id="boutoncv">Télécharger mon CV <i class="fa-solid fa-download"></i>
 			</a>
 		</div>
 	</div>
@@ -199,10 +198,11 @@
 						<p>- Obtention du brevet des collèges mention BIEN</p>
 					</div>
 				</div>
-				<a href="CV-2022 Mériadec Denier d'Aprigny1.pdf" target="_blank"
-					download="CV-2022 Mériadec Denier d'Aprigny1.pdf">
-					<p id="boutoncvformation">Télécharger mon CV <i class="fa-solid fa-download"></i></p>
-				</a>
+				<div class="btnCv">
+					<a href="CV-2022 Mériadec Denier d'Aprigny1.pdf" target="_blank"
+						download="CV-2022 Mériadec Denier d'Aprigny1.pdf" id="boutoncv">Télécharger mon CV <i class="fa-solid fa-download"></i>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -252,7 +252,7 @@
 		<div><a href="https://www.instagram.com/meeria._/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 		</div>
 	</div>
-	<h4 class="droits">ⓒ2022. Meria. All Right Reserved \ Privacy policy</h4>
+	<h4 class="droits">ⓒ2023. Meria. All Right Reserved \ Privacy policy</h4>
 </footer>
 <script src="script.js"></script>
 
